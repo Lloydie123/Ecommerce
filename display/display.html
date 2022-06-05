@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Display</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="product_details.css" rel="stylesheet">
+ 
+
+
+  <body>
+
+
+    <main class="container">
+
+        <!--Product Image/ Left image-->
+        <div class="left-column">
+          <img data-image="black" src="images/dell laptop.png" alt="">
+          <img data-image="blue" src="images/dell laptop.png" alt="">
+          <img data-image="red" class="active" src="images/dell laptop.png" alt="">
+        </div>
+
+
+        <div class="right-column">
+
+            <!-- Product Description -->
+            <div class="product-description">
+
+              <span>Dell Laptop</span>
+              <h1>Dell Laptop</h1>
+              <p>A professional looking laptop under the brand of Dell. Dell laptops are know for their performance perfect for office works, casual browsing and internet surfing. </p>
+            </div>
+
+
+
+            
+
+        <div class="product-configuration">
+
+            <!-- Select product color -->
+            <div class="product-color">
+              <span>Color</span>
+  
+              <div class="color-choose">
+                <div>
+                  <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                  <label for="red"><span></span></label>
+                </div>
+                <div>
+                  <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                  <label for="blue"><span></span></label>
+                </div>
+                <div>
+                  <input data-image="black" type="radio" id="black" name="color" value="black">
+                  <label for="black"><span></span></label>
+                </div>
+              </div>
+  
+            </div>
+  
+          <!-- Additional Option -->
+          <div class="cable-config">
+            <span>Additional Option here</span>
+
+            <div class="cable-choose">
+              <button>Choice 1</button>
+              <button>Choice 2</button>
+              <button>Choice 3</button>
+            </div>
+
+            <a href="#"> Support here </a>
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>P100</span>
+          <a href="#" class="cart-btn">Add to cart</a>
+        </div>
+      </div>
+    </main>
+
+
+
+
+        
+        <!-- Sript -->
+        <script src="JS/script.js"></script>
+        <script src="JS/cart.js"></script>
+        <script src="JS/jquery-3.5.1.min.js"></script>
+        <script src="JS/multislider.min.js"></script>
+    </body>
+</html>
+

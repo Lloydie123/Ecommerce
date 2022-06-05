@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" href="CSS/style.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+      
+        <title> Online Laptop Store </title>
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <nav>
+           
+            <div class="navbar-top">
+                <div>
+                    <button id="menuButton"><i class="fas fa-bars"></i></button>
+                    <!--Logo-->
+                    <a href="index.html">
+                       
+                       <img src="Images/icon.png" style="width: 50px;"> 
+                    </a><h1 style="padding: 20px;"> ACCELERATE </h1> PC AND SMARTPHONE STORE
+                    
+                </div>
+                <div>
+                    <!--Start of My account part-->
+                    <div class="account">
+                        <a href="index.html">
+                            <button class="account-btn">
+                                <i class="fas fa-user-alt"></i>
+                            </button>
+                            <span class="account-text">My account</span>
+                        </a>
+                        <!--When we click the btnShowAccountInfo this section will be displayed-->
+                    </div>
+
+                      <!--End of My account part-->
+
+                    <!--Start of Shopping cart-->
+                    <div class="shopping-cart">
+                        <div class="sum-prices">
+                            <!--Shopping cart logo-->
+                            <i
+                                class="fas fa-shopping-cart shoppingCartButton"
+                            ></i>
+                            <!-- Display total  sum -->
+                            <h6 id="sum-prices"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar bottom part -->
+            <!-- Here I put the links to the other pages or nav links -->
+            <div class="navbar" id="navbar">
+                <div class="links">
+                    <ul>
+                        <li class="nav-links">
+                            <a href="mobil.html" class="link">PC</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="mobil.html" class="link">Mobile</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="mobil.html" class="link">Gaming</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="mobil.html" class="link">Camera</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="#" class="link">Sound</a>
+                        </li>
+                        <li class="nav-links">
+                            <a href="#" class="link">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- The searchbar which will be in the right side of the links -->
+                <div class="searchbar">
+                    <form action="#">
+                        <input type="search" placeholder="Sök efter produkte" />
+                        <i class="fa fa-search" id="search-icon"></i>
+                    </form>
+                </div>
+            </div>
+            <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <!-- If there is no item, display Your shopping cart is empty-->
+                    <h4 class="empty">Your shopping cart is empty</h4>
+                    <!-- <li class="buyItem">
+						<img src="Images/producs-images/Mobiles/galaxynote10.png">
+						<div>
+							<h5>Products Name</h5>
+							<h6>$199</h6>
+							<div>
+								<button>-</button>
+								<span class="countOfProduct">1</span>
+								<button>+</button>
+							</div>
+						</div>
+					</li> -->
+                </ul>
+                <button class="btn checkout hidden">Check out</button>
+            </div>
+            
+
+            <!-- Brand New Item -->
+            <section class="main-section">
+                <div class="pop-mobiles">
+                    <div class="pop-mobiles-1">
+                        <figure>
+                            <img
+                                src="Images/producs-images/Mobiles/new_iphone.png"
+                            />
+                        </figure>
+                        <div>
+                            <h2>New Flagship Phone</h2>
+                            <p>
+                                The new iPhone in 2021 is expected to stick to the same overall size and shape as the iPhone 12 models, including flat edges. The most notable cosmetic change on the outside is rumored to be a larger camera bump and a shift in the positioning of the camera, as seen in these dummies posted by Sonny Dickson on Twitter.
+                            </p>
+                            <h4>$1099</h4>
+                            <a href="detail_page.html" class="btn"
+                                >Buy now<i class="fas fa-angle-right"></i
+                            ></a>
+                        </div>
+                    </div>
+            
+        </nav>
+
+
+        
+        <main>
+            <!--- Main Section-->
+            <section class="main-section">
+                <div class="product-container">
+                    <h3>Laptops</h3>
+                    <div class="products">
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-1.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="1"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 1</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Laptops come in various sizes, which usually refer to the size of the display. </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">999</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-2.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="2"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 2</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                       They range from a 10-inch to an 20-inch for mainstream laptops. 
+                                    </p>
+                                    <h6 class="price">
+                                       P<span class="priceValue">599</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-3.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="3"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 3</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Their weight ranges from a couple of pounds to over 9lbs.
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">650</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-4.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 4</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Besides size display, laptops comes in various resolutions ranging from 1280x800 to 1920x1080.
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-5.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 5</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Besides size display, laptops comes in various resolutions ranging from 1280x800 to 1920x1080.
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-6.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 6</h4>
+                                    <span class="stars"></span>
+                                    <p>The first laptop was released by Osborne Computers in 1981. 
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-7.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 7</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Laptops are small enough to fit in backpacks and travel bags.
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-8.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 8</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Monitor, keyboard, mouse and speakers.  </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-9.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 9</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        They have all the hardware you need included in the package. 
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-10.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 10</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        The portability of a laptop can be a problem when it comes to security because they are easily stolen.
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-11.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 11</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Using a password on a laptop prevents an unauthorized user from accessing your files.
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="Images/producs-images/Laptops/laptop-12.png"
+                                        alt="popular labtops and computers"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h4 class="productName">Product 12</h4>
+                                    <span class="stars"></span>
+                                    <p>
+                                        Using a password on a laptop prevents an unauthorized user from accessing your files.
+                                    </p>
+                                    <h6 class="price">
+                                        $<span class="priceValue">899</span>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+                    <h3>Popular mobiles</h3>
+                    <div class="pop-mobiles-2">
+                        <ul class="products">
+                            <li class="product">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="Images/producs-images/Mobiles/galaxynote10.png"
+                                            alt="popular mobiles"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="5"
+                                            >
+                                                <i class="fas fa-cart-plus"></i
+                                                >Add to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 5</h4>
+                                        <span class="stars"></span>
+                                        <h4 class="price">
+                                            $<span class="priceValue"
+                                                >1099</span
+                                            >
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="Images/producs-images/Mobiles/mobile-3.png"
+                                            alt="popular mobiles"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="6"
+                                            >
+                                                <i class="fas fa-cart-plus"></i
+                                                >Add to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 6</h4>
+                                        <span class="stars"></span>
+                                        <h4 class="price">
+                                            $<span class="priceValue">999</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="Images/producs-images/Mobiles/galaxy s.png"
+                                            alt="popular mobiles"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="7"
+                                            >
+                                                <i class="fas fa-cart-plus"></i
+                                                >Add to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 7</h4>
+                                        <span class="stars"></span>
+                                        <h4 class="price">
+                                            $<span class="priceValue">800</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="Images/producs-images/Mobiles/mobile-2.png"
+                                            alt="popular mobiles"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="8"
+                                            >
+                                                <i class="fas fa-cart-plus"></i
+                                                >Add to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 8</h4>
+                                        <span class="stars"></span>
+                                        <h4 class="price">
+                                            $<span class="priceValue">599</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="Images/producs-images/Mobiles/mobile.1.png"
+                                            alt="popular mobiles"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="9"
+                                            >
+                                                <i class="fas fa-cart-plus"></i
+                                                >Add to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 9</h4>
+                                        <span class="stars"></span>
+                                        <h4 class="price">
+                                            $<span class="priceValue">850</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="product-under">
+                                    <figure class="product-image">
+                                        <img
+                                            src="Images/producs-images/Mobiles/mobile-3.png"
+                                            alt="popular mobiles"
+                                        />
+                                        <div class="product-over">
+                                            <button
+                                                class="btn btn-small addToCart"
+                                                data-product-id="10"
+                                            >
+                                                <i class="fas fa-cart-plus"></i
+                                                >Add to cart
+                                            </button>
+                                            <a
+                                                href="detail_page.html"
+                                                class="btn btn-small"
+                                                >More Info</a
+                                            >
+                                        </div>
+                                    </figure>
+                                    <div class="product-summary">
+                                        <h4 class="productName">Product 10</h4>
+                                        <span class="stars"></span>
+                                        <h4 class="price">
+                                            $<span class="priceValue">769</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+<!-- Start of contact us -->
+
+        <div class="main" id="section3">
+            <div class="main" id="contact">
+            
+            
+            
+              <section class="contact" id="contact" >
+            
+                <div class="heading">
+                   <img src="images/twig.png" alt="">
+                   <h3 style="font-family: 'Nunito', sans-serif;">Contact us</h3>
+                </div>
+             
+                <div class="row">
+             
+                   <div class="image">
+                      <img src="images/contact.png" style="width:500px;" alt="">
+                   </div>
+             
+                   <form action="" method="post">
+                      <h3>Contact Us</h3>
+                      <input type="text" name="name" required class="box" maxlength="20" placeholder="Enter your name">
+                      <input type="number" name="number" required class="box" maxlength="20" placeholder="Enter your contact number" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false">
+                      <input type="textare" name="guests" required class="box" maxlength="20" placeholder="How may we help you?" min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+                      <input type="submit" name="send" value="Send us a message" class="btn">
+                   </form>
+             
+                </div>
+            
+            </section>
+
+<!-- End of contact us -->
+        
+  <!-- FOOTER START -->
+  <div class="footer">
+    <div class="contain">
+    <div class="col">
+      <h1>Company</h1>
+      <ul>
+        <li>About</li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+        <li>Get in touch</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Products</h1>
+      <ul>
+        <li>About</li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Accounts</h1>
+      <ul>
+        <li>About</li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+
+      </ul>
+    </div>
+   
+    <div class="col">
+      <h1>Payment</h1>
+      <ul>
+        <li>Paypal</li>
+        <li>Paymaya</li>
+        <li>Gcash</li>
+      </ul>
+    </div>
+    <div class="col social">
+      <h1>Social</h1>
+      <ul>
+        
+        <li><img src="Images/facebook-brands.svg" width="32" style="width: 25px;"></li>
+        <li><img src="Images/linkedin-in-brands.svg" width="32" style="width: 25px;"></li>
+        <li><img src="Images/twitter-brands.svg" width="32" style="width: 25px;"></li>
+      </ul>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+  </div>
+
+
+  <!-- END OF FOOTER -->
+
+        
+        <!-- Sript -->
+        <script src="JS/script.js"></script>
+        <script src="JS/cart.js"></script>
+        <script src="JS/jquery-3.5.1.min.js"></script>
+        <script src="JS/multislider.min.js"></script>
+    </body>
+</html>
+
+
+
+<style>
+
+
+    
+    /* Footer */
+.dummy_page {
+  height: 200px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 60px 0px;
+}
+/* FOR THE FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+
+/* RESPONSIVE FOOTER 1 */
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+
+/* RESPONSIVE FOOTER 2 */
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+
+/* RESPONSIVE FOOTER 3 */
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+/* RESPONSIVE FOOTER 4 */
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+</style>
